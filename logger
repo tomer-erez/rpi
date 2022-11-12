@@ -1,0 +1,6 @@
+<imread time for different cameras>
+	1. raspicam: 200 frames, seconds 5.6017, fps35.703
+	2. c920 webcam romania: 200 frames, seconds 5.6, fps 35.69
+	3. amazon webcam:  200 frames, seconds 5.6, fps 35.34
+	## conclusion imread time does not vary between these 3 cameras
+

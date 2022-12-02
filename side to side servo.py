@@ -16,27 +16,16 @@ print('90 degrees')
 pwm.set_servo_pulsewidth( servo, 1500 ) ;
 time.sleep( 1 )
 
-for i in range(8):
-    if i%2==0:
-        ang=0
-    else:
-        ang=180
-        
+for ang in range (0,210,30):
     pulse=500+(100/9)*ang
     pwm.set_servo_pulsewidth( servo, pulse ) ;
     time.sleep( 1 )
-
+        
 pwm.set_servo_pulsewidth( servo, 1500 ) ;
 time.sleep( 1 )
+print('oops! ilegal input')
 pwm.set_PWM_dutycycle( servo, 0 )
 pwm.set_PWM_frequency( servo, 0 )
 print('bye')
-exit()   
- 
-
-
-
-
-     
-
-
+exit()
+    

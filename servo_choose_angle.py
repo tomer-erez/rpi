@@ -6,7 +6,7 @@ import pigpio
 import time
 
 servo = 18
-
+# 18 is pin 6
 pwm = pigpio.pi()
 pwm.set_mode(servo, pigpio.OUTPUT)
 

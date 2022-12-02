@@ -12,14 +12,16 @@ GPIO.setup(in2,GPIO.OUT)
 GPIO.setup(en,GPIO.OUT)
 GPIO.output(in1,GPIO.LOW)
 GPIO.output(in2,GPIO.LOW)
-p=GPIO.PWM(en,1000)
-p.start(25)
+p=GPIO.PWM(en,50)
+p.start(5)
 print("\n")
 print("The default speed & direction of motor is LOW & Forward.....")
 print("r-run s-stop f-forward b-backward l-low m-medium h-high e-exit")
 print("\n")    
 # l298n
-# ENA to pin 12
+
+# ENA to pin 12 tho online it says 11
+# ground the rpi to the bridge!!
 # IN1 to pin 8
 # IN2 to pin 9
 

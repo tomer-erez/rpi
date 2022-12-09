@@ -31,12 +31,4 @@ time.sleep( 1 )
 pwm.set_PWM_dutycycle( servo, 0 )
 pwm.set_PWM_frequency( servo, 0 )
 print('bye')
-exit()   
- 
-
-
-
-
-     
-
-
+exit()
